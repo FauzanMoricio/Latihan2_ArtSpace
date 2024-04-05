@@ -1,4 +1,4 @@
-package a10121078.example.artspace
+package ArtSpace_10121077.example.artspace
 
 import org.junit.Test
 

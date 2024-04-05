@@ -1,4 +1,4 @@
-package a10121078.example.artspace
+package ArtSpace_10121077.example.artspace
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -24,7 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.artspace.R
-import a10121078.example.artspace.ui.theme.ArtSpaceTheme
+import ArtSpace_10121077.example.artspace.ui.theme.ArtSpaceTheme
 //import java.util.ListResourceBundle
 
 class MainActivity : ComponentActivity() {
@@ -54,76 +54,29 @@ fun ArtSpaceApp() {
         when(currentImage) {
             1 -> {
                 ArtSpaceImage(
-                    imageResource = R.drawable.a_sunday_afternoon_on_the_island_of_la_grande_jatte,
-                    nameResource = R.string.A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte,
-                    authorResource = R.string.Georges_Seurat,
+                    imageResource = R.drawable.the_screean,
+                    nameResource = R.string.the_scream,
+                    authorResource = R.string.Salvador_Dali,
                     onNextButtonClick = { currentImage = 2 },
-                    onPreviousButtonClick = { currentImage = 9 })
+                    onPreviousButtonClick = { currentImage = 3 })
             }
             2 -> {
                 ArtSpaceImage(
-                    imageResource = R.drawable.guernica,
-                    nameResource = R.string.Guernica,
-                    authorResource = R.string.Pablo_Picasso,
+                    imageResource = R.drawable.starry_night,
+                    nameResource = R.string.starry_night,
+                    authorResource = R.string.Edvard_Munch,
                     onNextButtonClick = { currentImage = 3 },
                     onPreviousButtonClick = { currentImage = 1 })
             }
             3 -> {
                 ArtSpaceImage(
-                    imageResource = R.drawable.girl_with_a_pearl_earring,
-                    nameResource = R.string.girl_with_a_pearl_earring,
-                    authorResource = R.string.Johannes_Vermeer,
-                    onNextButtonClick = { currentImage = 4 },
-                    onPreviousButtonClick = { currentImage = 2 })
-            }
-            4 -> {
-                ArtSpaceImage(
-                    imageResource = R.drawable.monalisa,
-                    nameResource = R.string.monalisa,
-                    authorResource = R.string.Leonardo_da_Vinci,
-                    onNextButtonClick = { currentImage = 5 },
-                    onPreviousButtonClick = { currentImage = 3 })
-            }
-            5 -> {
-                ArtSpaceImage(
-                    imageResource = R.drawable.portrait_de_l_artiste_sans_barbe,
-                    nameResource = R.string.portrait_de_l_artiste_sans_barbe,
-                    authorResource = R.string.Van_Gogh,
-                    onNextButtonClick = { currentImage = 6 },
-                    onPreviousButtonClick = { currentImage = 4 })
-            }
-            6 -> {
-                ArtSpaceImage(
-                    imageResource = R.drawable.starry_night,
-                    nameResource = R.string.starry_night,
-                    authorResource = R.string.Van_Gogh,
-                    onNextButtonClick = { currentImage = 7 },
-                    onPreviousButtonClick = { currentImage = 5 })
-            }
-            7 -> {
-                ArtSpaceImage(
-                    imageResource = R.drawable.the_screean,
-                    nameResource = R.string.the_scream,
-                    authorResource = R.string.Edvard_Munch,
-                    onNextButtonClick = { currentImage = 8 },
-                    onPreviousButtonClick = { currentImage = 6 })
-            }
-            8 -> {
-                ArtSpaceImage(
                     imageResource = R.drawable.whistler_s_mother,
                     nameResource = R.string.Whistler_Mother,
                     authorResource = R.string.James_McNeill_Whistler,
-                    onNextButtonClick = { currentImage = 9 },
-                    onPreviousButtonClick = { currentImage = 7 })
-            }
-            9 -> {
-                ArtSpaceImage(
-                    imageResource = R.drawable.the_persistence_of_memory,
-                    nameResource = R.string.the_persistence_of_memory,
-                    authorResource = R.string.Salvador_Dali,
                     onNextButtonClick = { currentImage = 1 },
-                    onPreviousButtonClick = { currentImage = 8 })
+                    onPreviousButtonClick = { currentImage = 2 })
             }
+
         }
     }
 }

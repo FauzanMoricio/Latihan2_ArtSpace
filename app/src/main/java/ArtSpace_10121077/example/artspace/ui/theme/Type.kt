@@ -1,4 +1,4 @@
-package a10121078.example.artspace.ui.theme
+package ArtSpace_10121077.example.artspace.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

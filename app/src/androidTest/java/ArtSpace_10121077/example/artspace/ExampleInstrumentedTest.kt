@@ -1,4 +1,4 @@
-package a10121078.example.artspace
+package ArtSpace_10121077.example.artspace
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
